@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Lets Build</h2>
+    <div class="footer-modal">
+        <h3>Get Started</h3>
+      
+       <button class="google-btn">  <img src="./Assets/google.png" alt="" width="20px"> Continue with Google</button>
+        <button class="signUp-btn">Sign Up</button>
+        <button class="login-btn">Login</button>
+        <br>
+      </div>
+<style>
+    h2{
+        color: white;
+        text-align: center;
+        margin-top: 30%;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 2rem;
+    }
+    body{
+        background: rgb(8, 50, 69);
+    }
+    .footer-modal {
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      
+        width: 320px;                /* Normal width (desktop/tablet) */
+        max-width: 95%;              /* Prevents overflow */
+        padding: 20px;
+        border-radius: 18px 18px 0 0;
+        
+        background:black;
+        color: white;
+        text-align: center;
+        box-shadow: 0 -5px 20px rgba(0,0,0,0.4);
+      }
+      
+      /* Buttons */
+      .footer-modal button {
+        width: 100%;
+        padding: 12px;
+        border: none;
+        border-radius: 10px;
+        margin-top: 10px;
+        cursor: pointer;
+      }
+      
+      /* Google button */
+      .google-btn {
+        background: white;
+        color: black;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+      /* sign up button */
+      .signUp-btn{
+        background: white;
+        color: black;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+       
+      }
+      /* Login button */
+      .login-btn {
+        background:none;
+        color: white;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        
+        
+      }
+
+
+      
+      /* 👉 FULL WIDTH ON MOBILE */
+      @media (max-width: 600px) {
+        .footer-modal {
+          width: 92%;
+          left: 0;
+          transform: none;
+          border-radius: 18px 18px 0 0;
+        }
+        h2{
+            margin-top: 63%;
+        }
+      }
+      
+      @media (max-width: 400px) {
+        .footer-modal {
+          width: 89%;
+          left: 0;
+          transform: none;
+          border-radius: 18px 18px 0 0;
+        }
+      }
+</style>      
+</body>
+</html>
